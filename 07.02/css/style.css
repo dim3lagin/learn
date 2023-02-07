@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body.no-scroll,
+body.show-nav {
+    overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*Header*/
+.header {
+    height: 80px;
+    background-color: #52503B;
+}
+
+.header-inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-link a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    margin-right: 20px;
+    transition: .2s cubic-bezier(0, 1, 0.5, 1) !important;
+}
+
+.nav-link:hover a {
+    color: #6c6ad0;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 20px;
+    border-radius: 6px;
+    height: 42px;
+    width: 150px;
+    transition: .5s cubic-bezier(0, 1, 0.5, 1) !important;
+}
+
+.btn--dark_green {
+    color: #fff !important;
+    background-color: #52503B;
+}
+
+.btn--dark_green a {
+    color: #fff;
+
+}
+
+.btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.btn:hover a {
+    min-height: 100%;
+    width: 100%;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #6c6ad0;
+}
+
+/*Intro*/
+.intro {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    background-image: url(/img/house_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.intro-inner {
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-block {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-block h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 33px;
+}
+
+.text-block h4 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.mouse {
+    position: absolute;
+    bottom: -6px;
+}
+
+/*benefits*/
+.benefits {
+    background-color: #FAF8F0;
+}
+
+.text-container {
+    position: relative;
+    padding: 150px 50px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+}
+
+.text-container .btn {
+    margin-top: 20px;
+}
+
+.text-container::before {
+    position: absolute;
+    content: "";
+    width: 42px;
+    height: 8px;
+    background-color: #E08631;
+    right: 50%;
+    left: 50%;
+    top: 100px;
+}
+
+.big-text {
+    min-width: 100%;
+    padding: 15px;
+    font-size: 50px;
+    color: #52503B;
+    background-color: #fff;
+    text-align: center;
+    line-height: 96px;
+    padding: 100px 0px;
+}
+
+.big-text::before {
+    position: absolute;
+    content: "";
+    width: 42px !important;
+    height: 8px !important;
+    background-color: #E08631;
+    right: 50%;
+    top: 150px;
+}
+
+.intro-two {
+    height: 70vh;
+    background-image: url(/img/interior.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.other-titles {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+}
+
+.other-titles h3{
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.other-titles p{
+    font-size: 16px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.house-cart {
+    width: 350px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.house-cart h5 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.house-cart h6 {
+    font-size: 16px;
+    font-weight: 300;
+}
